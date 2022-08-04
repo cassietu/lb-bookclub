@@ -1,0 +1,1091 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Merriweather", serif;
+  font-size: 36px;
+  font-weight: 300;
+}
+
+h4 {
+  font-family: "Merriweather", serif;
+  font-size: 28px;
+  text-align: center;
+}
+
+h5 {
+  font-family: "Merriweather", serif;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.65em;
+}
+
+.hero-button {
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 18px;
+  color: white;
+  background-color: #e04141;
+  margin-top: 20px;
+  padding: 14px 34px;
+}
+.hero-button:hover {
+  cursor: pointer;
+  background-color: #bd3e3e;
+  transition: background-color 200ms ease;
+}
+
+#submit-button {
+  width: 100%;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: white;
+  background-color: #e04141;
+  border: none;
+  border-radius: 10px;
+  margin-top: 30px;
+  padding: 14px 34px;
+}
+#submit-button:hover {
+  cursor: pointer;
+  background-color: #bd3e3e;
+  transition: background-color 200ms ease;
+}
+
+/*Header*/
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 100;
+}
+.header .topMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  border-bottom: 1px solid grey;
+  top: 0;
+  padding: 0px 60px;
+}
+.header .topMenu .logo {
+  display: flex;
+  align-items: center;
+}
+.header .topMenu .logo .logo-image {
+  width: 40px;
+  margin-right: 15px;
+}
+.header .topMenu .logo a {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+.header .topMenu .logo a:visited, .header .topMenu .logo a:hover, .header .topMenu .logo a:active {
+  color: black;
+}
+.header .topMenu .menuLinks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  padding-right: 0;
+}
+.header .topMenu .menuLinks a {
+  font-family: "Merriweather", serif;
+  color: black;
+  text-decoration: none;
+}
+.header .topMenu .menuLinks a:visited {
+  color: black;
+}
+.header .topMenu .menuLinks a:hover, .header .topMenu .menuLinks a:active {
+  color: gray;
+}
+.header .topMenu .menuLinks .links {
+  padding: 0px 50px;
+  padding-right: 0;
+}
+.header .topMenu #hamburger,
+.header .topMenu #closeMenu {
+  display: none;
+  width: 28px;
+}
+.header #sideMenu {
+  visibility: collapse;
+}
+
+/*Hero*/
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+  width: 100%;
+  max-height: 800px;
+  margin: auto;
+  overflow: hidden;
+}
+.hero .hero-text {
+  position: absolute;
+  width: 450px;
+  left: 200px;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 50px;
+}
+.hero .heroImages {
+  display: none;
+  width: 100%;
+  position: relative;
+  bottom: 0px;
+  overflow: hidden;
+}
+.hero img {
+  width: 100%;
+}
+.hero .fade {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/*How it works*/
+.how-it-works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  padding-top: 175px;
+}
+.how-it-works .steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+}
+.how-it-works .steps .step {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-self: flex-start;
+  width: 400px;
+  margin: 50px;
+}
+.how-it-works .steps .step img {
+  width: 115px;
+  margin-bottom: 30px;
+  opacity: 0.5;
+}
+.how-it-works .steps .step .step-p-center {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/*Schedule*/
+.schedule {
+  width: 100%;
+  background-color: white;
+  padding-top: 175px;
+}
+.schedule .book {
+  width: 175px;
+  height: 125px;
+  filter: drop-shadow(3px 3px 3px rgb(149, 149, 149));
+  z-index: 10;
+}
+.schedule .mainBook {
+  width: 100%;
+}
+.schedule .book-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  background-color: #dfefef;
+  padding: 60px 0;
+}
+.schedule .book-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  background-color: #cde8e8;
+  padding: 60px 0;
+}
+.schedule .book-info-left {
+  padding: 0px 0px 0px 60px;
+  width: 700px;
+}
+.schedule .book-info-right {
+  padding: 0px 60px 0 0;
+  width: 700px;
+}
+.schedule .bookDiv1 {
+  margin-top: 30px;
+}
+.schedule .bookDiv2,
+.schedule .bookDiv3,
+.schedule .bookDiv4 {
+  position: relative;
+}
+.schedule .title {
+  font-family: "Merriweather Sans", sans-serif;
+  text-transform: capitalize;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  margin-bottom: 5px;
+}
+.schedule .author {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+.schedule .book-description {
+  font-family: "Merriweather", serif;
+  margin-bottom: 18px;
+}
+.schedule .discussion {
+  font-family: "Merriweather", serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.schedule .discussion .bold {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+}
+
+/*Other reads*/
+.trending-books {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  padding-top: 175px;
+}
+.trending-books .book-array {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  width: 100%;
+  padding: 40px 40px 0 40px;
+  overflow: auto;
+}
+.trending-books .otherBookInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: auto;
+  margin: 20px 25px 0 25px;
+}
+.trending-books .otherBook {
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(3px 3px 3px rgb(149, 149, 149));
+}
+.trending-books .trendingTitle {
+  font-family: "Merriweather Sans", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 4px;
+  color: rgb(102, 101, 101);
+}
+.trending-books .trendingAuthor {
+  font-family: "Merriweather Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  text-align: center;
+  color: rgb(102, 101, 101);
+}
+
+/*Community*/
+.community {
+  width: 100%;
+  background-color: white;
+  padding-top: 125px;
+}
+
+.background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-image: url(images/pexels-lumn-298660.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: 50px;
+}
+
+.quote-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 825px;
+  height: 325px;
+  background-color: white;
+  font-weight: 300;
+  opacity: 0.97;
+  padding: 60px 70px;
+}
+
+.quoteDiv {
+  display: none;
+}
+
+.quote-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.quote-text p {
+  font-size: 24px;
+  padding-bottom: 20px;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  color: white;
+  position: static;
+  width: auto;
+  font-size: 30px;
+  transition: 500ms ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  filter: drop-shadow(0px 0px 3px grey);
+  padding: 16px;
+}
+
+.arrow {
+  margin: 30px;
+}
+
+.prev:hover,
+.next:hover {
+  color: #f2e7df;
+}
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 500ms ease;
+}
+
+.active,
+.dot:hover {
+  background-color: rgb(122, 122, 122);
+}
+
+.dots {
+  position: absolute;
+  margin-top: 390px;
+}
+
+.fade2 {
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+/*Join*/
+.join {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: white;
+  padding: 80px 0;
+}
+.join .h3-center {
+  text-align: center;
+}
+
+/*Footer*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  background-color: #f2e7df;
+  padding: 50px 0;
+}
+footer .social-media {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+footer .icon {
+  cursor: pointer;
+  width: 30px;
+  margin: 10px;
+  opacity: 0.75;
+}
+footer .footer-text {
+  font-size: 12px;
+  text-align: center;
+  padding: 0 30px;
+}
+
+/* Join Modal */
+#joinModal {
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 500;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.5); /* Black w/ opacity */
+  -webkit-animation: fadein 800ms;
+          animation: fadein 800ms;
+}
+
+input {
+  width: 350px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-weight: 200;
+  color: black;
+}
+
+input::-moz-placeholder {
+  font-size: 16px;
+  color: black;
+  opacity: 0.5;
+}
+
+input:-ms-input-placeholder {
+  font-size: 16px;
+  color: black;
+  opacity: 0.5;
+}
+
+input::placeholder {
+  font-size: 16px;
+  color: black;
+  opacity: 0.5;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 525px;
+  background-color: white;
+  filter: drop-shadow(5px 5px 15px rgba(45, 45, 45, 0.5));
+  border-radius: 10px;
+  padding: 20px 20px 40px 20px;
+}
+
+.modal-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px;
+}
+.modal-text h4 {
+  margin-bottom: 25px;
+  padding: 0 20px;
+}
+.modal-text p {
+  line-height: 1.5em;
+  text-align: center;
+  margin-top: 25px;
+  padding: 0 20px;
+}
+
+/* Customize the label (the container) */
+.checkbox-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: auto;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.container {
+  width: 125px;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 200;
+  padding: 0px 15px 15px 27px;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-p-text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 5;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #eee;
+}
+
+/* When the checkbox is checked, add a red background */
+.container input:checked ~ .checkmark {
+  background-color: #d65c5c;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 6px;
+  top: 2px;
+  width: 3px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.closeModal {
+  align-self: flex-end;
+  font-size: 28px;
+  line-height: 1em;
+  font-weight: bold;
+  color: black;
+}
+
+.closeModal:hover,
+.closeModal:focus {
+  cursor: pointer;
+  color: grey;
+  text-decoration: none;
+}
+
+/*Desktop------------------------------------------------------------*/
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+  .hero .hero-text {
+    left: 125px;
+  }
+  .trending-books .book-array {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 40px 40px 0 40px;
+    overflow: auto;
+  }
+}
+/*Laptop------------------------------------------------------------*/
+@media only screen and (min-width: 769px) and (max-width: 1200px) {
+  h1 {
+    font-size: 20px;
+  }
+  .header .logo {
+    width: 225px;
+  }
+  .header .menuLinks .links {
+    font-size: 12px;
+  }
+  .hero .hero-text {
+    left: 80px;
+  }
+  .how-it-works .steps {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .how-it-works .steps .step {
+    width: 400px;
+    margin: 35px;
+  }
+  .schedule {
+    padding-top: 125px;
+  }
+  .schedule .book-right {
+    padding: 60px 30px;
+  }
+  .schedule .book-left {
+    padding: 60px 30px;
+  }
+  .schedule .book-info-left {
+    width: 540px;
+    padding-left: 40px;
+  }
+  .schedule .book-info-right {
+    width: 540px;
+    padding-right: 40px;
+  }
+  .trending-books {
+    padding-top: 125px;
+  }
+  .trending-books .book-array {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: flex-start;
+    width: 100%;
+    padding: 40px 25px 0 25px;
+    overflow: auto;
+  }
+  .trending-books .otherBookInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+    height: auto;
+    margin: 20px 8px 0 8px;
+  }
+  .community {
+    padding-top: 125px;
+  }
+  .community .background .quote-container {
+    width: 550px;
+    padding: 40px;
+  }
+  .community .background .quote-text p {
+    font-size: 20px;
+  }
+}
+/*iPad------------------------------------------------------------*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  h3 {
+    font-size: 30px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+  button {
+    margin-top: 15px;
+  }
+  .header .topMenu .logo {
+    width: 300px;
+  }
+  .header .topMenu .menuLinks {
+    width: 270px;
+    display: none;
+  }
+  .header .topMenu .menuLinks .links {
+    font-size: 12px;
+    padding: 0px 20px;
+    padding-right: 0;
+  }
+  .header .topMenu #hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+  .header .topMenu #closeMenu {
+    display: none;
+    cursor: pointer;
+  }
+  .header #sideMenu {
+    visibility: collapse;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: white;
+    opacity: 0.92;
+    filter: drop-shadow(0px 4px 4px rgb(187, 186, 186));
+    padding: 60px;
+  }
+  .header .sideMenuLinks {
+    padding: 8px 0;
+  }
+  .header .sideMenuLinks a {
+    font-family: "Merriweather", serif;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  .header .sideMenuLinks a:visited {
+    color: black;
+  }
+  .header .sideMenuLinks a:hover, .header .sideMenuLinks a:active {
+    color: gray;
+  }
+  .hero {
+    height: 600px;
+  }
+  .hero .hero-text {
+    width: 320px;
+    left: 80px;
+  }
+  .hero .heroImages {
+    width: auto;
+    height: 100%;
+  }
+  .hero img {
+    width: auto;
+    height: 100%;
+  }
+  .how-it-works .steps {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .how-it-works .steps .step {
+    width: 400px;
+    margin: 35px;
+  }
+  .schedule {
+    padding-top: 125px;
+  }
+  .schedule .book-right {
+    padding: 60px 30px;
+  }
+  .schedule .book-left {
+    padding: 60px 30px;
+  }
+  .schedule .book-info-left {
+    width: 55%;
+  }
+  .schedule .book-info-right {
+    width: 55%;
+  }
+  .trending-books {
+    padding-top: 125px;
+  }
+  .trending-books .book-array {
+    justify-content: flex-start;
+    height: 500px;
+  }
+  .trending-books .otherBook {
+    width: 200px;
+    height: auto;
+  }
+  .community {
+    padding-top: 125px;
+  }
+  .community .background .quote-container {
+    width: 75%;
+    height: 320px;
+    padding: 30px 40px;
+  }
+  .community .background .arrow {
+    margin: 10px;
+  }
+  .community .background .quote-text p {
+    font-size: 18px;
+  }
+  .modal-content {
+    margin: 50px;
+  }
+}
+/*iPhone------------------------------------------------------------*/
+@media only screen and (max-width: 480px) {
+  h3 {
+    font-size: 24px;
+  }
+  h1 {
+    font-size: 18px;
+  }
+  button {
+    border-radius: 10px;
+    margin-top: 15px;
+    padding: 12px;
+  }
+  .header .topMenu {
+    padding: 0 25px;
+  }
+  .header .topMenu .logo {
+    width: 200px;
+  }
+  .header .topMenu .menuLinks {
+    display: none;
+    width: 270px;
+  }
+  .header .topMenu .menuLinks .links {
+    font-size: 12px;
+    padding: 0px 20px;
+    padding-right: 0;
+  }
+  .header .topMenu #hamburger {
+    display: flex;
+    cursor: pointer;
+  }
+  .header .topMenu #closeMenu {
+    display: none;
+    cursor: pointer;
+  }
+  .header #sideMenu {
+    visibility: collapse;
+    position: fixed;
+    top: 100px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: white;
+    opacity: 0.92;
+    filter: drop-shadow(0px 4px 4px rgb(187, 186, 186));
+    padding: 45px;
+  }
+  .header .sideMenuLinks {
+    padding: 8px 0;
+  }
+  .header .sideMenuLinks a {
+    text-decoration: none;
+    color: black;
+    font-family: "Merriweather", serif;
+    font-weight: 500;
+  }
+  .header .sideMenuLinks a:visited {
+    color: black;
+  }
+  .header .sideMenuLinks a:hover, .header .sideMenuLinks a:active {
+    color: gray;
+  }
+  .hero {
+    height: 450px;
+  }
+  .hero .hero-text {
+    width: 225px;
+    padding: 30px;
+    left: 40px;
+  }
+  .hero .heroImages {
+    width: auto;
+    height: 100%;
+  }
+  .hero img {
+    width: auto;
+    height: 100%;
+  }
+  .how-it-works {
+    padding-top: 150px;
+  }
+  .how-it-works .steps {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .how-it-works .steps .step {
+    width: 80%;
+    margin: 35px;
+  }
+  .schedule {
+    padding-top: 100px;
+  }
+  .schedule .book {
+    width: 140px;
+    height: auto;
+  }
+  .schedule .mainBook {
+    width: 100%;
+    height: auto;
+  }
+  .schedule .book-left {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .schedule .book-right {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 0;
+  }
+  .schedule .book-info-left {
+    width: 100%;
+    padding: 50px 50px;
+  }
+  .schedule .book-info-right {
+    width: 100%;
+    padding: 50px 50px;
+  }
+  .trending-books {
+    padding-top: 100px;
+  }
+  .trending-books .book-array {
+    justify-content: flex-start;
+    height: 400px;
+  }
+  .trending-books .otherBook {
+    width: 150px;
+    height: auto;
+  }
+  .community {
+    padding-top: 100px;
+  }
+  .community .background .quote-container {
+    width: 85%;
+    height: 370px;
+    padding: 25px;
+  }
+  .community .background .arrow {
+    margin: 0px;
+  }
+  .community .background .quote-text p {
+    font-size: 16px;
+  }
+  .community .dots {
+    margin-top: 440px;
+  }
+  h5 {
+    font-size: 16px;
+  }
+  .modal-content {
+    width: 85%;
+    padding: 30px 20px;
+  }
+  .modal-text {
+    width: 100%;
+    padding: 10px;
+  }
+  input {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+  .checkbox-form {
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
