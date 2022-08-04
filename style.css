@@ -918,11 +918,11 @@ input::placeholder {
 }
 /*iPhone------------------------------------------------------------*/
 @media only screen and (max-width: 480px) {
-  h3 {
-    font-size: 24px;
-  }
   h1 {
     font-size: 18px;
+  }
+  h3 {
+    font-size: 26px;
   }
   button {
     border-radius: 10px;
@@ -988,7 +988,7 @@ input::placeholder {
     height: 450px;
   }
   .hero .hero-text {
-    width: 225px;
+    width: 72%;
     padding: 30px;
     left: 40px;
   }
@@ -1012,7 +1012,7 @@ input::placeholder {
     margin: 35px;
   }
   .schedule {
-    padding-top: 100px;
+    padding-top: 125px;
   }
   .schedule .book {
     width: 140px;
@@ -1041,18 +1041,19 @@ input::placeholder {
     padding: 50px 50px;
   }
   .trending-books {
-    padding-top: 100px;
+    padding-top: 125px;
   }
   .trending-books .book-array {
     justify-content: flex-start;
     height: 400px;
+    padding-right: 80px;
   }
   .trending-books .otherBook {
     width: 150px;
     height: auto;
   }
   .community {
-    padding-top: 100px;
+    padding-top: 125px;
   }
   .community .background .quote-container {
     width: 85%;
@@ -1073,19 +1074,39 @@ input::placeholder {
   }
   .modal-content {
     width: 85%;
-    padding: 30px 20px;
+    padding: 20px 20px;
   }
   .modal-text {
     width: 100%;
     padding: 10px;
   }
+  .modal-text h4 {
+    font-size: 20px;
+    margin-bottom: 15px;
+    padding: 0 20px;
+  }
+  .modal-text p {
+    font-size: 14px;
+    line-height: 1.5em;
+    text-align: center;
+    margin-top: 15px;
+    padding: 0 10px;
+  }
+  #submit-button {
+    margin-top: 0;
+  }
   input {
     width: 100%;
+    margin: 4px 0;
   }
   form {
     width: 100%;
   }
   .checkbox-form {
     flex-direction: column;
+  }
+  .hero-button {
+    padding: 10px 24px;
+    border-radius: 12px;
   }
 }/*# sourceMappingURL=style.css.map */

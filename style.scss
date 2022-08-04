@@ -962,12 +962,12 @@ input::placeholder {
 
 /*iPhone------------------------------------------------------------*/
 @media only screen and (max-width: 480px) {
-  h3 {
-    font-size: 24px;
-  }
-
   h1 {
     font-size: 18px;
+  }
+
+  h3 {
+    font-size: 26px;
   }
 
   button {
@@ -1046,7 +1046,7 @@ input::placeholder {
     height: 450px;
 
     .hero-text {
-      width: 225px;
+      width: 72%;
       padding: 30px;
       left: 40px;
     }
@@ -1077,7 +1077,7 @@ input::placeholder {
   }
 
   .schedule {
-    padding-top: 100px;
+    padding-top: 125px;
 
     .book {
       width: 140px;
@@ -1113,11 +1113,12 @@ input::placeholder {
   }
 
   .trending-books {
-    padding-top: 100px;
+    padding-top: 125px;
 
     .book-array {
       justify-content: flex-start;
       height: 400px;
+      padding-right: 80px;
     }
 
     .otherBook {
@@ -1127,7 +1128,7 @@ input::placeholder {
   }
 
   .community {
-    padding-top: 100px;
+    padding-top: 125px;
 
     .background {
       .quote-container {
@@ -1152,19 +1153,37 @@ input::placeholder {
   h5 {
     font-size: 16px;
   }
-
   .modal-content {
     width: 85%;
-    padding: 30px 20px;
+    padding: 20px 20px;
   }
 
   .modal-text {
     width: 100%;
     padding: 10px;
+
+    h4 {
+      font-size: 20px;
+      margin-bottom: 15px;
+      padding: 0 20px;
+    }
+
+    p {
+      font-size: 14px;
+      line-height: 1.5em;
+      text-align: center;
+      margin-top: 15px;
+      padding: 0 10px;
+    }
+  }
+
+  #submit-button {
+    margin-top: 0;
   }
 
   input {
     width: 100%;
+    margin: 4px 0;
   }
 
   form {
@@ -1173,5 +1192,10 @@ input::placeholder {
 
   .checkbox-form {
     flex-direction: column;
+  }
+
+  .hero-button {
+    padding: 10px 24px;
+    border-radius: 12px;
   }
 }
