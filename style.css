@@ -511,7 +511,29 @@ footer .icon {
 footer .footer-text {
   font-size: 12px;
   text-align: center;
+  margin-top: 20px;
   padding: 0 30px;
+}
+footer .img-attributes {
+  width: 70%;
+  margin: 10px 30px;
+  text-align: center;
+}
+footer .img-attributes a {
+  text-decoration: none;
+  color: black;
+  font-size: 12px;
+  font-weight: 200;
+  padding: 0 2px;
+}
+footer .img-attributes a:hover {
+  color: rgb(72, 72, 72);
+}
+footer .img-attributes a:active {
+  color: rgb(72, 72, 72);
+}
+footer .img-attributes a:visited {
+  color: black;
 }
 
 /* Join Modal */
@@ -1045,8 +1067,8 @@ input::placeholder {
   }
   .trending-books .book-array {
     justify-content: flex-start;
-    height: 400px;
-    padding-right: 80px;
+    min-height: 100%;
+    margin: 0 100px;
   }
   .trending-books .otherBook {
     width: 150px;
@@ -1106,7 +1128,7 @@ input::placeholder {
     flex-direction: column;
   }
   .hero-button {
-    padding: 10px 24px;
-    border-radius: 12px;
+    padding: 14px 28px;
+    border-radius: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
