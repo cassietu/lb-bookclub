@@ -348,7 +348,7 @@ p {
     align-items: flex-start;
     width: 100%;
     padding: 40px 40px 0 40px;
-    overflow: auto;
+    overflow-x: auto;
   }
 
   .otherBookInfo {
@@ -988,7 +988,7 @@ input::placeholder {
 }
 
 /*iPhone------------------------------------------------------------*/
-@media only screen and (min-width: 320px) and (max-width: 480px) {
+@media only screen and (max-width: 480px) {
   h1 {
     font-size: 18px;
   }
@@ -1142,16 +1142,16 @@ input::placeholder {
   .trending-books {
     padding-top: 125px;
 
+    .book-array {
+      justify-content: flex-start;
+      height: 400px;
+      margin-right: 100px;
+    }
+
     .otherBook {
       width: 150px;
       height: auto;
     }
-  }
-
-  .book-array {
-    justify-content: flex-start;
-    height: 400px;
-    margin: 0 100px;
   }
 
   .community {
