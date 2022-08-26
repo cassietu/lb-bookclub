@@ -1067,8 +1067,7 @@ input::placeholder {
   }
   .trending-books .book-array {
     justify-content: flex-start;
-    height: 400px;
-    padding-left: 100px;
+    min-height: 100%;
     padding-right: 100px;
     margin-right: 0;
     margin-left: 0;
