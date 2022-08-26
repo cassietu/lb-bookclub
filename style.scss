@@ -348,7 +348,7 @@ p {
     align-items: flex-start;
     width: 100%;
     padding: 40px 40px 0 40px;
-    overflow-x: auto;
+    overflow: auto;
   }
 
   .otherBookInfo {
@@ -1144,19 +1144,20 @@ input::placeholder {
 
     .book-array {
       justify-content: flex-start;
-      min-height: 100%;
+      height: 400px;
+      padding: 40px 40px 0 40px;
       margin-right: 0;
       margin-left: 0;
+
+      #lastBook {
+        padding-right: 100px;
+      }
     }
 
     .otherBook {
       width: 150px;
       height: auto;
     }
-  }
-
-  #lastBook {
-    margin-right: 80px;
   }
 
   .community {
